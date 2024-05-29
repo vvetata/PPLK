@@ -1,0 +1,90 @@
+@import 'nullstyle.scss';
+@import 'header.scss';
+@import 'mainBlock.scss';
+@import 'about.scss';
+@import 'vacancy.scss';
+@import 'advantages.scss';
+@import 'comand.scss';
+@import 'contacts.scss';
+@import 'footer.scss';
+@import 'career.scss';
+@import 'product.scss';
+
+
+
+$white: #FFFFFF;
+$black: #111311;
+$red: #DD3037;
+$grey: #999999;
+$green: #21A038;
+
+.button__red {
+          border-radius: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 12px;
+          font-weight: 700;
+          background-color: $red;
+          color: $white;
+          text-transform: uppercase;
+}
+
+.title {
+  color: $grey;
+    font-size: 18px;
+    align-self: center;
+    text-transform: uppercase;
+    
+    text-align: center;
+}
+
+.display__block {
+  display: block;
+}
+
+.transform {
+  transform: rotate(45deg);
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('/fonts/GothamPro.eot');
+  src: url('/fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/GothamPro.woff2') format('woff2'),
+      url('/fonts/GothamPro.woff') format('woff'),
+      url('/fonts/GothamPro.ttf') format('truetype'),
+      url('/fonts/GothamPro.svg#GothamPro') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('/fonts/GothamPro-Bold.eot');
+  src: url('/fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/GothamPro-Bold.woff2') format('woff2'),
+      url('/fonts/GothamPro-Bold.woff') format('woff'),
+      url('/fonts/GothamPro-Bold.ttf') format('truetype'),
+      url('/fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('/fonts/GothamPro-Medium.eot');
+  src: url('/fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/GothamPro-Medium.woff2') format('woff2'),
+      url('/fonts/GothamPro-Medium.woff') format('woff'),
+      url('/fonts/GothamPro-Medium.ttf') format('truetype'),
+      url('/fonts/GothamPro-Medium.svg#GothamPro-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Gotham Pro';
+  font-weight: 800;
+}

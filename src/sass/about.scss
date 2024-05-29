@@ -1,0 +1,51 @@
+$white: #FFFFFF;
+$black: #111311;
+$red: #DD3037;
+$grey: #999999;
+$green: #21A038;
+
+
+.about {
+    padding: 45px 0;
+
+}
+
+.about__title {
+    padding: 37px 0;
+}
+.title {
+}
+.about__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about__card {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:not(:last-child) {
+        margin-bottom: 35px;
+    }
+}
+
+.card-about__number {
+    min-width: 80px;
+    min-height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+    border: 1px solid #B6FFBA;
+    box-shadow: 0 0 10px #B6FFBA;
+    border-radius: 5px;
+    color: $green;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+.card-about__text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}

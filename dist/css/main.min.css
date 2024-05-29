@@ -1,0 +1,767 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding-left: 0;
+}
+
+ul, li, ol {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html, body {
+  height: 100%;
+  font-size: 14px;
+  color: #FFFFFF;
+  font-weight: 700;
+  line-height: 142%;
+  font-family: "Gotham Pro";
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #212121;
+}
+
+._container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: content-box;
+}
+
+._ibg {
+  position: relative;
+}
+
+._ibg img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.header {
+  padding: 2px 10px;
+  background-color: #111311;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header__contacts {
+  font-size: 9px;
+}
+
+.main {
+  position: relative;
+  max-height: 500px;
+}
+
+.main__image {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.main__image img {
+  object-fit: cover;
+  object-position: 80% bottom;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.main__title {
+  margin-top: 54.2%;
+  font-size: 30px;
+  line-height: 120%;
+}
+
+.main__subtitle {
+  padding: 15px 0 35px;
+  font-size: 18px;
+}
+
+.main__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 45px;
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  background: #DD3037;
+  color: #FFFFFF;
+  font-size: 12;
+  line-height: 167%;
+}
+
+.main__modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 491px;
+  z-index: 10;
+  background-color: #111311;
+  display: none;
+  min-height: 763px;
+  flex-direction: column;
+}
+
+.display__block {
+  display: flex;
+}
+
+.modal__head {
+  display: flex;
+  padding: 0 20px;
+  justify-content: flex-end;
+}
+.modal__head svg {
+  cursor: pointer;
+}
+
+.modal__title {
+  color: #999999;
+  font-size: 18px;
+  align-self: center;
+  text-transform: uppercase;
+  padding: 37px 0;
+  text-align: center;
+}
+
+input[type=text] {
+  display: block;
+  width: 100%;
+  height: 52px;
+  background: #111311;
+  color: #999999;
+  font-size: 18px;
+  border-bottom: 3px solid #999999;
+}
+
+.modal__text {
+  padding: 20px 0 0 10px;
+  font-size: 18px;
+}
+
+select {
+  padding: 15px 0 15px 10px;
+  background-color: #111311;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.modal__p {
+  padding: 15px 0 15px 10px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+input[type=file] {
+  display: block;
+  width: 184px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #21A038;
+}
+
+.input__file {
+  position: relative;
+  display: block;
+  margin-bottom: 35px;
+}
+.input__file span {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px 20px;
+  display: block;
+  width: 184px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: #21A038;
+}
+.input__file input[type=file] {
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  display: block;
+  width: 184px;
+  height: 40px;
+}
+
+.modal__checkbox {
+  margin-bottom: 20px;
+}
+
+.modal__label {
+  font-size: 10px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.modal__submit {
+  display: block;
+  text-align: center;
+}
+
+input[type=submit] {
+  margin: 15px 0 45px 0;
+  align-self: center;
+  width: 200px;
+  height: 40px;
+  border-radius: 30px;
+  font-size: 12px;
+  background-color: #DD3037;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.main__modal2 {
+  display: none;
+}
+
+.modal2__head {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal2__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 491px;
+  z-index: 10;
+  background-color: #111311;
+  min-height: 640px;
+}
+.modal2__body .modal__title {
+  margin-bottom: 74px;
+}
+.modal2__body .modal2__image {
+  margin-bottom: 45px;
+}
+.modal2__body button {
+  width: 156px;
+  height: 40px;
+  margin-bottom: 45px;
+}
+
+.modal2__text {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.about {
+  padding: 45px 0;
+}
+
+.about__title {
+  padding: 37px 0;
+}
+
+.about__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__card {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__card:not(:last-child) {
+  margin-bottom: 35px;
+}
+
+.card-about__number {
+  min-width: 80px;
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111311;
+  border: 1px solid #B6FFBA;
+  box-shadow: 0 0 10px #B6FFBA;
+  border-radius: 5px;
+  color: #21A038;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.card-about__text {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.vacancy {
+  padding: 43px 0 45px;
+}
+
+.vacancy__title {
+  margin-bottom: 35px;
+}
+
+.vacancy__division {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.vacancy-devision__card {
+  padding: 0 16px;
+  border-radius: 5px;
+  border: 3px solid #999999;
+  color: #FFFFFF;
+  font-size: 12px;
+  margin: 5px;
+  text-transform: uppercase;
+}
+.vacancy-devision__card:hover, .vacancy-devision__card:active, .vacancy-devision__card:focus {
+  background-color: #999999;
+  color: #111311;
+}
+
+.vacancy__active {
+  background-color: #999999;
+  color: #111311;
+}
+
+.profession-vacancy__top {
+  display: flex;
+  font-size: 18px;
+}
+
+.profession-vacancy__card {
+  border: 3px solid #999999;
+  border-radius: 30px;
+}
+.profession-vacancy__card:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.profession-vacancy__left {
+  flex: 1 1 80%;
+  padding: 30px 0 30px 30px;
+}
+.profession-vacancy__left img {
+  margin-right: 10px;
+}
+
+.profession-vacancy__name {
+  display: flex;
+  margin-bottom: 20px;
+}
+.profession-vacancy__name img {
+  width: 25px;
+  height: 25px;
+}
+
+.profession-vacancy__salary {
+  display: flex;
+  color: #21A038;
+}
+.profession-vacancy__salary img {
+  width: 25px;
+  height: 25px;
+}
+
+.profession-vacancy__right {
+  display: flex;
+  flex: 1 1 20%;
+  justify-content: right;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.profession-vacancy__bottom {
+  margin: 10px 30px 30px 30px;
+  font-size: 12px;
+  display: none;
+}
+
+.vacancy__button {
+  margin: 35px auto 0 auto;
+  text-align: center;
+}
+
+.button__red {
+  width: 260px;
+  height: 40px;
+}
+
+.advantages {
+  padding-bottom: 45px;
+}
+
+.advantages__title {
+  margin-bottom: 20px;
+}
+
+.advantages__card {
+  border-bottom: 3px solid #999999;
+  font-size: 18px;
+}
+
+.card-advantages__title {
+  display: flex;
+  align-items: center;
+}
+.card-advantages__title h5 {
+  flex: 1 1 80%;
+  padding: 15px 0 15px 20px;
+}
+.card-advantages__title .more {
+  flex: 1 1 20%;
+  width: 25px;
+  height: 25px;
+}
+
+.card-advantages__text {
+  display: none;
+  font-weight: 400;
+  margin: 0 20px;
+}
+
+.comand {
+  padding: 45px 0 35px;
+  position: relative;
+}
+
+.comand__container {
+  position: relative;
+  z-index: 5;
+}
+
+.comand__title {
+  font-size: 18px;
+  line-height: 133%;
+  margin-bottom: 133px;
+}
+.comand__title p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.comand__card {
+  background-color: rgba(17, 19, 17, 0.8);
+  padding: 20px 26.5px;
+  border-radius: 30px;
+  border: 3px solid #36853B;
+}
+
+.comand__text {
+  font-size: 18px;
+  line-height: 122%;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+
+.comand__button {
+  margin: 0 auto;
+}
+
+.comand__images img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.contacts {
+  padding: 26px 0 42px;
+  background-color: #111311;
+}
+
+.title {
+  line-height: 320%;
+}
+
+.contacts__cityes {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.contacts__Mos {
+  padding: 0 15.5px;
+  line-height: 250%;
+}
+
+.contacts__Spb {
+  padding: 0 15.5px;
+  line-height: 250%;
+}
+
+.card-contacts {
+  display: flex;
+}
+.card-contacts:not(:last-child) {
+  margin-bottom: 17px;
+}
+.card-contacts img {
+  margin-right: 10px;
+}
+.card-contacts p {
+  font-size: 12px;
+  line-height: 250%;
+}
+
+.contacts__cards {
+  margin-bottom: 42px;
+}
+
+.contacts__address {
+  text-decoration: underline;
+}
+
+.contacts__links {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.map img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  padding: 46px 0 35px;
+  background-color: #111311;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer__copy {
+  margin-bottom: 30px;
+}
+
+.footer__pay {
+  text-decoration: underline;
+}
+
+.footer__confid {
+  text-decoration: underline;
+  margin-bottom: 35px;
+}
+
+.career {
+  padding: 43px 0 47px;
+  background-color: #111311;
+}
+
+.career__container {
+  position: relative;
+}
+
+.career__title {
+  margin-bottom: 35px;
+}
+
+.career__text {
+  margin-bottom: 35px;
+}
+.career__text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.career__cards {
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.career__card {
+  flex: 1 0 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  white-space: normal;
+}
+.career__card li {
+  font-weight: 400;
+}
+.career__card li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.career__name {
+  font-size: 16px;
+  line-height: 125%;
+}
+
+.career__profession {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.career__image {
+  margin-bottom: 15px;
+}
+
+.career__control {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 0;
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 13px;
+}
+
+.products {
+  padding-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.products__title {
+  line-height: 122%;
+  margin-bottom: 35px;
+}
+
+.products__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.products__items {
+  display: flex;
+  white-space: nowrap;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  margin-bottom: 35px;
+}
+
+.products__item {
+  flex: 1 0 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: normal;
+  max-width: 182px;
+  margin-right: 20px;
+}
+
+.products__control {
+  position: absolute;
+  top: 50%;
+}
+
+.products__indicators {
+  color: #888988;
+}
+
+.button__red {
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #DD3037;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.title {
+  color: #999999;
+  font-size: 18px;
+  align-self: center;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.display__block {
+  display: block;
+}
+
+.transform {
+  transform: rotate(45deg);
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("/fonts/GothamPro.eot");
+  src: url("/fonts/GothamPro.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamPro.woff2") format("woff2"), url("/fonts/GothamPro.woff") format("woff"), url("/fonts/GothamPro.ttf") format("truetype"), url("/fonts/GothamPro.svg#GothamPro") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("/fonts/GothamPro-Bold.eot");
+  src: url("/fonts/GothamPro-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamPro-Bold.woff2") format("woff2"), url("/fonts/GothamPro-Bold.woff") format("woff"), url("/fonts/GothamPro-Bold.ttf") format("truetype"), url("/fonts/GothamPro-Bold.svg#GothamPro-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: url("/fonts/GothamPro-Medium.eot");
+  src: url("/fonts/GothamPro-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/GothamPro-Medium.woff2") format("woff2"), url("/fonts/GothamPro-Medium.woff") format("woff"), url("/fonts/GothamPro-Medium.ttf") format("truetype"), url("/fonts/GothamPro-Medium.svg#GothamPro-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+h1 {
+  font-family: "Gotham Pro";
+  font-weight: 800;
+}

@@ -1,0 +1,51 @@
+$white: #FFFFFF;
+$black: #111311;
+$red: #DD3037;
+$grey: #999999;
+$green: #21A038;
+$green2: #36853B;
+
+.comand {
+    padding: 45px 0 35px;
+    position: relative;
+}
+.comand__container {
+    position: relative;
+    z-index: 5;
+}
+.comand__title {
+    font-size: 18px;
+    line-height: 133%;
+    margin-bottom: 133px;
+    p:not(:last-child){
+        margin-bottom: 20px;
+    }
+}
+.comand__card {
+    background-color: rgb(17, 19, 17, 0.8);
+    padding: 20px 26.5px;
+    border-radius: 30px;
+    border: 3px solid $green2;
+}
+.comand__text {
+    font-size: 18px;
+    line-height: 122%;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+.comand__button {
+    margin: 0 auto;
+    
+}
+
+.comand__images{
+    
+    img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    }
+}

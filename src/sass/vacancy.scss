@@ -1,0 +1,106 @@
+$white: #FFFFFF;
+$black: #111311;
+$red: #DD3037;
+$grey: #999999;
+$green: #21A038;
+
+
+.vacancy {
+    padding: 43px 0 45px;
+}
+.vacancy__container {
+}
+.vacancy__title {
+    margin-bottom: 35px;
+}
+.vacancy__division {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
+}
+
+.vacancy-devision__card {
+    padding: 0 16px;
+    border-radius: 5px;
+    border: 3px solid $grey;
+    color: $white;
+    font-size: 12px;
+    margin: 5px;
+    text-transform: uppercase;
+    &:hover, &:active, &:focus {
+        background-color: $grey;
+        color: $black;
+    }
+}
+
+.vacancy__active {
+    background-color: $grey;
+    color: $black;
+}
+
+.vacancy__profession {
+}
+.profession-vacancy {
+}
+.profession__slide {
+}
+.profession-vacancy__top {
+    display: flex;
+    font-size: 18px;
+}
+
+.profession-vacancy__card {
+    border: 3px solid $grey;
+    border-radius: 30px;
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+.profession-vacancy__left {
+    flex: 1 1 80%;
+    padding: 30px 0 30px 30px;
+    img{
+        margin-right: 10px;
+    }
+}
+.profession-vacancy__name {
+    display: flex;
+    margin-bottom: 20px;
+    img{
+        width: 25px;
+        height: 25px;
+    }
+}
+.profession-vacancy__salary {
+    display: flex;
+    color: $green;
+    img{
+        width: 25px;
+        height: 25px;
+    }
+}
+.profession-vacancy__right {
+    display: flex;
+    flex: 1 1 20%;
+    justify-content: right;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.profession-vacancy__bottom {
+    margin: 10px 30px 30px 30px;
+    font-size: 12px;
+    display: none;
+}
+
+.vacancy__button {
+    margin: 35px auto 0 auto;
+    text-align: center;
+
+}
+.button__red {
+    width: 260px;
+    height: 40px;
+}
+

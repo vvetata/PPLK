@@ -1,0 +1,18 @@
+$white: #FFFFFF;
+$black: #111311;
+
+.header {
+    padding: 2px 10px;
+    background-color: $black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.header__burger {
+
+}
+.header__logo {
+}
+.header__contacts {
+    font-size: 9px;
+}
