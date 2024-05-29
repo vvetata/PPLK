@@ -9,8 +9,6 @@ let indicators = Array.from(indicatorsCollection);
 
 let indIndex = 0;
 
-
-
 nextBtn.onclick = () => {
     productItems.scrollLeft += productItem[0].clientWidth + 20;
     if (indIndex >= indicators.length-1) {
