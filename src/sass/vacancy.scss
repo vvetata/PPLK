@@ -39,10 +39,17 @@ $green: #21A038;
 }
 
 .vacancy__profession {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
 }
 .profession-vacancy {
 }
 .profession__slide {
+    flex: 1 0 100%;
+    width: 100%;
+    white-space: normal;
 }
 .profession-vacancy__top {
     display: flex;

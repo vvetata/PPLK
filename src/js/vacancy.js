@@ -17,9 +17,32 @@ professionCard.forEach ((card, index) => {
     })
 })
 
+let cardNavCollection = document.querySelectorAll('.vacancy-devision__card');
+let cardNav = Array.from(cardNavCollection);
+let vacancyProf = document.querySelector('.vacancy__profession');
+let professionSlide = document.querySelector('.profession__slide');
+let indIndex = 0;
+cardNav.forEach((card, index) => {
+    card.addEventListener('click', () => {
+        vacancyProf.scrollLeft = (professionSlide.clientWidth) * index;
+        indIndex = index;
+        thisSl(indIndex);
+    })
+    })
+    let thisSl = (index) => {
+        for (let card of cardNav) {
+            card.classList.remove('vacancy__active');
+        }
+        cardNav[index].classList.add('vacancy__active');
+    }
+
+let advantages = document.querySelector('.advantages');
+let moreAdvantagesCollection = advantages.querySelectorAll('.more');
+let moreAdvantages = Array.from(moreAdvantagesCollection);
+
 adventagesCard.forEach ((card, index) => {
     card.addEventListener('click', () => {
-    more[4 + index].classList.toggle('transform');
+    moreAdvantages[index].classList.toggle('transform');
     advantagesText[index].classList.toggle('display__block');
     })
 })

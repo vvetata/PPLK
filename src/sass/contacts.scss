@@ -14,13 +14,22 @@ $green: #21A038;
 }
 .contacts__cityes {
     display: flex;
+    
     margin-bottom: 40px;
 }
 .contacts__Mos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 50%;
     padding: 0 15.5px;
     line-height: 250%;
 }
 .contacts__Spb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 50%;
     padding: 0 15.5px;
     line-height: 250%;
 }
@@ -39,8 +48,15 @@ $green: #21A038;
 }
 .contacts__cards {
     margin-bottom: 42px;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
 }
 .contacts__card {
+    flex: 1 0 100%;
+    width: 100%;
+    white-space: normal;
 }
 .contacts__phone {
  

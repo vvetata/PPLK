@@ -412,6 +412,20 @@ input[type=submit] {
   color: #111311;
 }
 
+.vacancy__profession {
+  display: flex;
+  white-space: nowrap;
+  overflow: scroll;
+  width: 100%;
+}
+.profession-vacancy {
+}
+.profession__slide {
+  flex: 1 0 100%;
+  width: 100%;
+  white-space: normal;
+}
+
 .profession-vacancy__top {
   display: flex;
   font-size: 18px;
@@ -565,15 +579,25 @@ input[type=submit] {
 
 .contacts__cityes {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 40px;
 }
 
 .contacts__Mos {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  flex: 1 1 50%;
   padding: 0 15.5px;
   line-height: 250%;
 }
 
 .contacts__Spb {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  flex: 1 1 50%;
   padding: 0 15.5px;
   line-height: 250%;
 }
@@ -594,6 +618,16 @@ input[type=submit] {
 
 .contacts__cards {
   margin-bottom: 42px;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+.contacts__card {
+  flex: 1 0 100%;
+  width: 100%;
+  white-space: normal;
 }
 
 .contacts__address {
@@ -743,7 +777,6 @@ footer {
   justify-content: center;
   align-items: center;
   white-space: normal;
-  margin-right: 10px;
 }
 .products__item img {
   transition: 0.3s;
@@ -752,7 +785,7 @@ footer {
 }
 
 .products__item_active {
-  box-shadow: 0 0 40px black;
+  
 }
 .products__item_active img {
   height: 182px;
@@ -775,6 +808,7 @@ footer {
   color: white;
   transform: scale(2, 1);
   margin: 0 7px;
+  
 }
 
 .button__red {

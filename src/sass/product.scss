@@ -33,7 +33,6 @@
     justify-content: center;
     align-items: center;
     white-space: normal;
-    margin-right: 10px;
     img{
         transition: 0.3s;
         height: 148px;
@@ -41,7 +40,6 @@
     }
 }
 .products__item_active{
-    box-shadow: 0 0 40px black;
     img{
         height: 182px;
         max-width: 100%;
@@ -55,7 +53,7 @@
 }
 .products__next {
 }
-.products__indicators {
+.products__indicator {
     color: #888988;
     &:not(:last-child) {
         margin-right: 9px;
@@ -63,6 +61,6 @@
 }
 .products__indicators_active{
     color: white;
-    transform: scale(2, 1);
+    transform: skewX(60), scale(2, 1) ;
     margin: 0 7px;
 }
