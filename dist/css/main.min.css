@@ -4,7 +4,7 @@
   font-family: 'Gotham Pro';
   src: url('/fonts/GothamPro.eot');
   src: url('/fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
-      url('/fonts/GothamPro.woff2') format('woff2'),
+      url('../fonts/GothamPro.woff2') format('woff2'),
       url('/fonts/GothamPro.woff') format('woff'),
       url('/fonts/GothamPro.ttf') format('truetype'),
       url('/fonts/GothamPro.svg#GothamPro') format('svg');
@@ -688,7 +688,7 @@ footer {
 
 .career__image {
   margin-bottom: 15px;
-  background: url(/img/career/Блик.svg) no-repeat;
+  background: url('/img/career/Блик.svg') no-repeat;
 }
 
 .career__control {
