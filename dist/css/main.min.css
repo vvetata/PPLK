@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 ::before,
 ::after {
@@ -649,6 +650,7 @@ footer {
 
 .career__image {
   margin-bottom: 15px;
+  background: url(/img/career/Блик.svg) no-repeat;
 }
 
 .career__control {
@@ -688,19 +690,35 @@ footer {
 .products__items {
   display: flex;
   white-space: nowrap;
-  overflow: scroll;
+  overflow: hidden;
   scroll-behavior: smooth;
   margin-bottom: 35px;
+  width: 100%;
+  padding: 0 150px;
+  height: 182px;
 }
 
 .products__item {
-  flex: 1 0 60%;
+  flex: 1 0 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   white-space: normal;
-  max-width: 182px;
-  margin-right: 20px;
+  margin-right: 10px;
+}
+.products__item img {
+  transition: 0.3s;
+  height: 148px;
+  max-width: 70%;
+}
+
+.products__item_active {
+  box-shadow: 0 0 40px black;
+}
+.products__item_active img {
+  height: 182px;
+  max-width: 100%;
 }
 
 .products__control {
@@ -710,6 +728,15 @@ footer {
 
 .products__indicators {
   color: #888988;
+}
+.products__indicators:not(:last-child) {
+  margin-right: 9px;
+}
+
+.products__indicators_active {
+  color: white;
+  transform: scale(2, 1);
+  margin: 0 7px;
 }
 
 .button__red {
