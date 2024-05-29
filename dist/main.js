@@ -9,17 +9,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/sass/main.scss":
-/*!****************************!*\
-  !*** ./src/sass/main.scss ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"css/main.min.css\");\n\n//# sourceURL=webpack://pplk/./src/sass/main.scss?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -27,7 +16,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/main.scss */ \"./src/sass/main.scss\");\n/* harmony import */ var _js_mainBlock_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/mainBlock.js */ \"./src/js/mainBlock.js\");\n/* harmony import */ var _js_mainBlock_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_mainBlock_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_vacancy_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/vacancy.js */ \"./src/js/vacancy.js\");\n/* harmony import */ var _js_vacancy_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_vacancy_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_career_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/career.js */ \"./src/js/career.js\");\n/* harmony import */ var _js_career_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_career_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _js_products_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/products.js */ \"./src/js/products.js\");\n/* harmony import */ var _js_products_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_products_js__WEBPACK_IMPORTED_MODULE_4__);\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://pplk/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_mainBlock_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/mainBlock.js */ \"./src/js/mainBlock.js\");\n/* harmony import */ var _js_mainBlock_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_mainBlock_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _js_vacancy_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/vacancy.js */ \"./src/js/vacancy.js\");\n/* harmony import */ var _js_vacancy_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_js_vacancy_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _js_career_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/career.js */ \"./src/js/career.js\");\n/* harmony import */ var _js_career_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_career_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_products_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/products.js */ \"./src/js/products.js\");\n/* harmony import */ var _js_products_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_products_js__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://pplk/./src/index.js?");
 
 /***/ }),
 
@@ -57,7 +46,7 @@ eval("/*let input_text = document.querySelectorAll('input__text');\r\nlet inputT
   \****************************/
 /***/ (() => {
 
-eval("\r\nlet prewBtn  = document.querySelector('.products__prew');\r\nlet nextBtn  = document.querySelector('.products__next');\r\nlet productItems = document.querySelector('.products__items');\r\nlet productItemCollection = document.querySelectorAll('.products__item');\r\nlet productItem = Array.from(productItemCollection);\r\nlet indicatorsCollection = document.querySelectorAll('.products__indicator');\r\nlet indicators = Array.from(indicatorsCollection);\r\n\r\nlet indIndex = 0;\r\n\r\n\r\n\r\nnextBtn.onclick = () => {\r\n    productItems.scrollLeft += productItem[0].clientWidth + 20;\r\n    if (indIndex >= indicators.length-1) {\r\n        indIndex = indIndex;\r\n    } else {\r\n        indIndex++;\r\n    }\r\n    thisSlide(indIndex);\r\n}\r\nprewBtn.onclick = () => {\r\n    productItems.scrollLeft -= productItem[0].clientWidth + 20;\r\n    if (indIndex < 1) {\r\n        return;        \r\n    } \r\n    else{\r\n        indIndex--;\r\n    }\r\n    thisSlide(indIndex);\r\n}\r\n\r\nindicators.forEach((ind, index) => {\r\n    ind.addEventListener('click', () => {\r\n        productItems.scrollLeft = (productItem[0].clientWidth + 20) * index;\r\n        indIndex = index;\r\n        thisSlide(indIndex);\r\n    })\r\n    })\r\n\r\nlet thisSlide = (index) => {\r\n    for (let ind of indicators) {\r\n        ind.classList.remove('products__indicators_active');\r\n    }\r\n    for (let pI of productItem) {\r\n        pI.classList.remove('products__item_active');\r\n    }\r\n    indicators[index].classList.add('products__indicators_active');\r\n    productItem[index].classList.add('products__item_active');\r\n}\r\n\n\n//# sourceURL=webpack://pplk/./src/js/products.js?");
+eval("\r\nlet prewBtn  = document.querySelector('.products__prew');\r\nlet nextBtn  = document.querySelector('.products__next');\r\nlet productItems = document.querySelector('.products__items');\r\nlet productItemCollection = document.querySelectorAll('.products__item');\r\nlet productItem = Array.from(productItemCollection);\r\nlet indicatorsCollection = document.querySelectorAll('.products__indicator');\r\nlet indicators = Array.from(indicatorsCollection);\r\n\r\nlet indIndex = 0;\r\n\r\nnextBtn.onclick = () => {\r\n    productItems.scrollLeft += productItem[0].clientWidth + 20;\r\n    if (indIndex >= indicators.length-1) {\r\n        indIndex = indIndex;\r\n    } else {\r\n        indIndex++;\r\n    }\r\n    thisSlide(indIndex);\r\n}\r\nprewBtn.onclick = () => {\r\n    productItems.scrollLeft -= productItem[0].clientWidth + 20;\r\n    if (indIndex < 1) {\r\n        return;        \r\n    } \r\n    else{\r\n        indIndex--;\r\n    }\r\n    thisSlide(indIndex);\r\n}\r\n\r\nindicators.forEach((ind, index) => {\r\n    ind.addEventListener('click', () => {\r\n        productItems.scrollLeft = (productItem[0].clientWidth + 20) * index;\r\n        indIndex = index;\r\n        thisSlide(indIndex);\r\n    })\r\n    })\r\n\r\nlet thisSlide = (index) => {\r\n    for (let ind of indicators) {\r\n        ind.classList.remove('products__indicators_active');\r\n    }\r\n    for (let pI of productItem) {\r\n        pI.classList.remove('products__item_active');\r\n    }\r\n    indicators[index].classList.add('products__indicators_active');\r\n    productItem[index].classList.add('products__item_active');\r\n}\r\n\n\n//# sourceURL=webpack://pplk/./src/js/products.js?");
 
 /***/ }),
 
@@ -122,18 +111,6 @@ eval("let professionCardColection = document.querySelectorAll('.profession-vacan
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -148,29 +125,6 @@ eval("let professionCardColection = document.querySelectorAll('.profession-vacan
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src;
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) {
-/******/ 					var i = scripts.length - 1;
-/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
-/******/ 				}
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
